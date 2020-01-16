@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ヾ(✿ﾟ▽ﾟ)ノ我永远喜欢明日香</title>
+  
+  <subtitle>来和我一起写代码吧</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://asukazero2.github.io/"/>
+  <updated>2020-01-16T12:01:06.052Z</updated>
+  <id>http://asukazero2.github.io/</id>
+  
+  <author>
+    <name>AAAsuka</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>First Article</title>
+    <link href="http://asukazero2.github.io/2020/01/16/first-article/"/>
+    <id>http://asukazero2.github.io/2020/01/16/first-article/</id>
+    <published>2020-01-16T03:28:53.000Z</published>
+    <updated>2020-01-16T12:01:06.052Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
