@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://asukazero2.github.io/"/>
-  <updated>2020-01-16T12:01:06.052Z</updated>
+  <updated>2020-01-18T01:54:30.758Z</updated>
   <id>http://asukazero2.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>First Article</title>
-    <link href="http://asukazero2.github.io/2020/01/16/first-article/"/>
-    <id>http://asukazero2.github.io/2020/01/16/first-article/</id>
-    <published>2020-01-16T03:28:53.000Z</published>
-    <updated>2020-01-16T12:01:06.052Z</updated>
+    <title>Java的基本程序设计结构</title>
+    <link href="http://asukazero2.github.io/2020/01/17/java-de-ji-ben-cheng-xu-she-ji-jie-gou/"/>
+    <id>http://asukazero2.github.io/2020/01/17/java-de-ji-ben-cheng-xu-she-ji-jie-gou/</id>
+    <published>2020-01-17T02:47:38.000Z</published>
+    <updated>2020-01-18T01:54:30.758Z</updated>
     
     <summary type="html">
     
@@ -29,17 +29,18 @@
       
         
         
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
+          &lt;h1 id=&quot;Java中的整数&quot;&gt;&lt;a href=&quot;#Java中的整数&quot; class=&quot;headerlink&quot; title=&quot;Java中的整数&quot;&gt;&lt;/a&gt;Java中的整数&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;Java中数值以二进制保存，数的最高位表示符号。&lt;br&gt;+5表示为&lt;br&gt;   
         
       
     
     </summary>
     
     
+      <category term="Java" scheme="http://AsukaZERO2.github.io/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://AsukaZERO2.github.io/tags/Java/"/>
     
   </entry>
   
