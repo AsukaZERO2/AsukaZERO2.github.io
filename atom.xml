@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://asukazero2.github.io/"/>
-  <updated>2020-01-19T11:41:22.727Z</updated>
+  <updated>2020-02-15T03:57:15.421Z</updated>
   <id>http://asukazero2.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>青岛口罩预约助手v1.0</title>
+    <link href="http://asukazero2.github.io/2020/02/15/qing-dao-kou-zhao-yu-yue-zhu-shou-v1-0/"/>
+    <id>http://asukazero2.github.io/2020/02/15/qing-dao-kou-zhao-yu-yue-zhu-shou-v1-0/</id>
+    <published>2020-02-15T03:43:36.000Z</published>
+    <updated>2020-02-15T03:57:15.421Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;这是一个用JavaScript写的脚本，用于青岛口罩预约系统，自动选择药房，并输入信息。&lt;br&gt;  &lt;em&gt;需要手动填写验证码&lt;/em&gt;&lt;br&gt;将开头变量改为你的信息，药房名称替换为目标药房即可。&lt;br&gt; &lt;em&gt;建议挂载到油猴脚本使用&lt;/em&gt;&lt;/p&gt;
+&lt;pre
+        
+      
+    
+    </summary>
+    
+    
+      <category term="脚本" scheme="http://AsukaZERO2.github.io/categories/%E8%84%9A%E6%9C%AC/"/>
+    
+    
+      <category term="JavaScript" scheme="http://AsukaZERO2.github.io/tags/JavaScript/"/>
+    
+      <category term="脚本" scheme="http://AsukaZERO2.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+  </entry>
   
   <entry>
     <title>Java的基本程序设计结构</title>
