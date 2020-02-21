@@ -4,10 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="青岛口罩预约助手v1.1, ヾ(✿ﾟ▽ﾟ)ノ我永远喜欢明日香">
-    <meta name="description" content="这是一个用JavaScript写的脚本，用于青岛口罩预约系统，自动选择药房，并输入信息。  需要手动填写验证码并点击提交将开头变量改为你的信息，药房名称替换为目标药房即可。 建议挂载到油猴脚本使用
+    <meta name="keywords" content="青岛口罩预约助手, ヾ(✿ﾟ▽ﾟ)ノ我永远喜欢明日香">
+    <meta name="description" content="这是一个用JavaScript写的脚本，用于青岛口罩预约系统，自动选择药房，并输入信息。 需要手动填写验证码并点击提交将开头变量改为你的信息，药房名称替换为目标药房即可。 建议挂载到油猴脚本使用
 // ==UserScript==
-// ">
+// @">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>青岛口罩预约助手v1.1 | ヾ(✿ﾟ▽ﾟ)ノ我永远喜欢明日香</title>
+    <title>青岛口罩预约助手 | ヾ(✿ﾟ▽ﾟ)ノ我永远喜欢明日香</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -28,8 +28,8 @@
     
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="ヾ(✿ﾟ▽ﾟ)ノ我永远喜欢明日香" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-okaidia.css" type="text/css"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-okaidia.css" type="text/css"><link rel="alternate" href="/atom.xml" title="ヾ(✿ﾟ▽ﾟ)ノ我永远喜欢明日香" type="application/atom+xml">
+</head>
 
 
 <body>
@@ -243,12 +243,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">青岛口罩预约助手v1.1</h1>
+                    <h1 class="description center-align post-title">青岛口罩预约助手</h1>
                 </div>
             </div>
         </div>
@@ -306,14 +306,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-16
+                    2020-02-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    287
+                    279
                 </div>
                 
 
@@ -331,51 +331,43 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>这是一个用JavaScript写的脚本，用于青岛口罩预约系统，自动选择药房，并输入信息。<br>  <strong>需要手动填写验证码并点击提交</strong><br>将开头变量改为你的信息，药房名称替换为目标药房即可。<br> <strong>建议挂载到油猴脚本使用</strong></p>
+                <p>这是一个用JavaScript写的脚本，用于青岛口罩预约系统，自动选择药房，并输入信息。<br> <strong>需要手动填写验证码并点击提交</strong><br>将开头变量改为你的信息，药房名称替换为目标药房即可。<br> <strong>建议挂载到油猴脚本使用</strong></p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// ==UserScript==</span>
-<span class="token comment" spellcheck="true">// @name         青岛口罩预约助手v1.0</span>
+<span class="token comment" spellcheck="true">// @name         青岛口罩预约助手</span>
 <span class="token comment" spellcheck="true">// @namespace    http://tampermonkey.net/</span>
 <span class="token comment" spellcheck="true">// @version      1.0</span>
 <span class="token comment" spellcheck="true">// @author       AAAsuka</span>
 <span class="token comment" spellcheck="true">// @match        *://kzyynew.qingdao.gov.cn:81/*</span>
 <span class="token comment" spellcheck="true">// ==/UserScript==</span>
-<span class="token keyword">var</span> 姓名 <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> 手机 <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> 身份证号 <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
 
-<span class="token keyword">var</span> curDate <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> str <span class="token operator">=</span> curDate<span class="token punctuation">.</span><span class="token function">getFullYear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"-"</span><span class="token operator">+</span><span class="token punctuation">(</span>curDate<span class="token punctuation">.</span><span class="token function">getMonth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"-"</span><span class="token operator">+</span>curDate<span class="token punctuation">.</span><span class="token function">getDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">" 08:30:00"</span><span class="token punctuation">;</span>
-<span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">var</span> curDate <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">var</span> aimtime <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span>Date<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex">/-/g</span><span class="token punctuation">,</span><span class="token string">"/"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>curDate <span class="token operator">></span> aimtime<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token keyword">try</span><span class="token punctuation">{</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"i.layui-icon.layui-icon-ok"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-                <span class="token punctuation">{</span>
-                    document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"i.layui-icon.layui-icon-ok"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"*[data-name='同方382店'] > .layui-col-xs2.action.text-right"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-                    document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">=</span> 姓名
-                    document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">'mobile'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">=</span> 手机<span class="token punctuation">;</span>
-                    document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">'code'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">=</span> 身份证号<span class="token punctuation">;</span>
-                    <span class="token keyword">return</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
+<span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getFullYear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"-"</span><span class="token operator">+</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getMonth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"-"</span><span class="token operator">+</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">" 08:30:00"</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> aimTime <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span>Date<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex">/-/g</span><span class="token punctuation">,</span><span class="token string">"/"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> countDown <span class="token operator">=</span> aimTime<span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">500</span><span class="token punctuation">;</span>
 
-            <span class="token punctuation">}</span>
-            <span class="token keyword">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">{</span>
-                <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span> <span class="token operator">==</span> name<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> aimTime<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">,</span> countDown<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> write <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">try</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"i.layui-icon.layui-icon-ok"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"i.layui-icon.layui-icon-ok"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"*[data-name='利群商厦'] > .layui-col-xs2.action.text-right"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">'你的名字'</span>
+            document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">'mobile'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">'你的电话'</span><span class="token punctuation">;</span>
+            document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">'code'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">'你的身份证'</span><span class="token punctuation">;</span>
+
+            <span class="token function">clearInterval</span><span class="token punctuation">(</span>write<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span><span class="token punctuation">{</span>
+            location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+    <span class="token keyword">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -419,7 +411,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://AsukaZERO2.github.io/2020/02/15/qing-dao-kou-zhao-yu-yue-zhu-shou-v1-0/">http://AsukaZERO2.github.io/2020/02/15/qing-dao-kou-zhao-yu-yue-zhu-shou-v1-0/</a>
+                    <a href="http://AsukaZERO2.github.io/2020/02/15/qing-dao-kou-zhao-yu-yue-zhu-shou/">http://AsukaZERO2.github.io/2020/02/15/qing-dao-kou-zhao-yu-yue-zhu-shou/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -530,21 +522,21 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2020/02/15/qing-dao-kou-zhao-yu-yue-zhu-shou-v1-0/">
+                <a href="/2020/02/15/qing-dao-kou-zhao-yu-yue-zhu-shou/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="青岛口罩预约助手v1.1">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="青岛口罩预约助手">
                         
-                        <span class="card-title">青岛口罩预约助手v1.1</span>
+                        <span class="card-title">青岛口罩预约助手</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是一个用JavaScript写的脚本，用于青岛口罩预约系统，自动选择药房，并输入信息。  需要手动填写验证码并点击提交将开头变量改为你的信息，药房名称替换为目标药房即可。 建议挂载到油猴脚本使用
+                            这是一个用JavaScript写的脚本，用于青岛口罩预约系统，自动选择药房，并输入信息。 需要手动填写验证码并点击提交将开头变量改为你的信息，药房名称替换为目标药房即可。 建议挂载到油猴脚本使用
 // ==UserScript==
-// 
+// @
                         
                     </div>
                     <div class="publish-info">

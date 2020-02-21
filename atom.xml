@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://asukazero2.github.io/"/>
-  <updated>2020-02-16T00:52:06.393Z</updated>
+  <updated>2020-02-21T02:09:42.898Z</updated>
   <id>http://asukazero2.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>青岛口罩预约助手v1.1</title>
-    <link href="http://asukazero2.github.io/2020/02/15/qing-dao-kou-zhao-yu-yue-zhu-shou-v1-0/"/>
-    <id>http://asukazero2.github.io/2020/02/15/qing-dao-kou-zhao-yu-yue-zhu-shou-v1-0/</id>
+    <title>青岛口罩预约助手</title>
+    <link href="http://asukazero2.github.io/2020/02/15/qing-dao-kou-zhao-yu-yue-zhu-shou/"/>
+    <id>http://asukazero2.github.io/2020/02/15/qing-dao-kou-zhao-yu-yue-zhu-shou/</id>
     <published>2020-02-15T03:43:36.000Z</published>
-    <updated>2020-02-16T00:52:06.393Z</updated>
+    <updated>2020-02-21T02:09:42.898Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;p&gt;这是一个用JavaScript写的脚本，用于青岛口罩预约系统，自动选择药房，并输入信息。&lt;br&gt;  &lt;strong&gt;需要手动填写验证码并点击提交&lt;/strong&gt;&lt;br&gt;将开头变量改为你的信息，药房名称替换为目标药房即可。&lt;br&gt;
+          &lt;p&gt;这是一个用JavaScript写的脚本，用于青岛口罩预约系统，自动选择药房，并输入信息。&lt;br&gt; &lt;strong&gt;需要手动填写验证码并点击提交&lt;/strong&gt;&lt;br&gt;将开头变量改为你的信息，药房名称替换为目标药房即可。&lt;br&gt;
         
       
     
